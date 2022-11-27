@@ -1,0 +1,17 @@
+initialize
+3
+4
+is_zero
+is_not_proper
+get_numerator
+get_denominator
+initialize
+4
+3
+is_not_proper
+convert_to_proper
+initialize
+0
+1
+is_zero
+quit
