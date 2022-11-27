@@ -1,9 +1,7 @@
 #include <bits/stdc++.h>
-#include "c1/Fraction_type.h"
+#include "Fraction_type.h"
 
 using namespace std;
-
-enum test { quit, initialize, get_numerator, get_denominator, is_zero, is_not_proper };
 
 int main ()
 {
