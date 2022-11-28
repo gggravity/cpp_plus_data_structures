@@ -3,5 +3,9 @@ project(cpp_plus_data_structures)
 
 set(CMAKE_CXX_STANDARD 20)
 
+find_package(Catch2 3 REQUIRED)
+
 add_executable(fraction_test c1/fraction_test.cpp c1/Fraction_type.cpp)
 add_executable(c1_e17 c1/e17.cpp)
+add_executable(data_type c2/Date_type.cpp c2/date_type_test.cpp)
+target_link_libraries(data_type PRIVATE Catch2::Catch2WithMain)
