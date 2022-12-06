@@ -12,7 +12,7 @@ struct Deck : Unsorted<Card>
 {
  public:
 
-  [[noreturn]] void generate ();
+  void generate ();
 
   void shuffle ();
 

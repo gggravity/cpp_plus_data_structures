@@ -30,17 +30,17 @@ class Unsorted
 
   }
 
-  virtual ~Unsorted ()
-  {
-    Node<T> *ptr;
-
-    while (list_data != nullptr)
-      {
-        ptr = list_data;
-        list_data = list_data->next;
-        delete ptr;
-      }
-  }
+//  virtual ~Unsorted ()
+//  {
+//    Node<T> *ptr;
+//
+//    while (list_data != nullptr)
+//      {
+//        ptr = list_data;
+//        list_data = list_data->next;
+//        delete ptr;
+//      }
+//  }
 
   void make_empty ()
   {
