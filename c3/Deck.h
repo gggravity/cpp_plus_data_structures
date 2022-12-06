@@ -5,9 +5,10 @@
 #pragma once
 
 #include "Unsorted.hpp"
-#include "Item.h"
+//#include "Item.h"
+#include "Card.h"
 
-struct Deck : Unsorted<Item>
+struct Deck : Unsorted<Card>
 {
  public:
 

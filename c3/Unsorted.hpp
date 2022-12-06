@@ -4,7 +4,7 @@
 
 #pragma once
 #include <bits/stdc++.h>
-#include "Item.h"
+//#include "Item.h"
 #include "Card.h"
 
 using namespace std;
@@ -145,7 +145,7 @@ class Unsorted
     current_position = nullptr;
   }
 
-  Item get_next_item ()
+  T get_next_item ()
   {
     if (current_position == nullptr)
       {

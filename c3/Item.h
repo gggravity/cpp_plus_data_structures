@@ -14,18 +14,18 @@
 //    less, greater, equal
 //};
 //
-class Item
-{
- public:
-  Item ();
-
-  [[nodiscard]]
-  Relation compare_to (Item other) const;
-
-  void print (ofstream &ofs) const;
-
-  void initialize (Card card);
-
- private:
-  Card card;
-};
+//class Item
+//{
+// public:
+//  Item ();
+//
+//  [[nodiscard]]
+//  Relation compare_to (Item other) const;
+//
+//  void print (ofstream &ofs) const;
+//
+//  void initialize (Card card);
+//
+// private:
+//  Card card;
+//};

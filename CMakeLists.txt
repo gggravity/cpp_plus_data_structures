@@ -12,8 +12,8 @@ add_executable(card
         c3/Card.cpp
         c3/Card.h
         c3/Unsorted.hpp
-        c3/Item.h
-        c3/Item.cpp
+#        c3/Item.h
+#        c3/Item.cpp
         c3/Deck.cpp
         c3/Deck.h)
 target_link_libraries(data_type PRIVATE Catch2::Catch2WithMain)
