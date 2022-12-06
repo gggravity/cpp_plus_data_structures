@@ -24,7 +24,7 @@ class Unsorted
 {
  public:
   Unsorted () :
-      length { 0 },
+      m_length { 0 },
       list_data { nullptr }
   {
 
@@ -52,7 +52,7 @@ class Unsorted
         list_data = list_data->next;
         delete ptr;
       }
-    length = 0;
+    m_length = 0;
   }
 
   [[nodiscard]] static
@@ -72,9 +72,9 @@ class Unsorted
   }
 
   [[nodiscard]]
-  int get_length () const
+  int length () const
   {
-    return length;
+    return m_length;
   }
 
   T get_item (T t, bool &found)
@@ -114,7 +114,7 @@ class Unsorted
     location->info = t;
     location->next = list_data;
     list_data = location;
-    length++;
+    m_length++;
   }
 
   void delete_item (T t)
@@ -137,7 +137,7 @@ class Unsorted
         location->next = location->next->next;
       }
     delete temp_location;
-    length--;
+    m_length--;
   }
 
   void reset_list ()
@@ -145,7 +145,7 @@ class Unsorted
     current_position = nullptr;
   }
 
-  T get_next_item ()
+  T next_item ()
   {
     if (current_position == nullptr)
       {
@@ -161,7 +161,7 @@ class Unsorted
  private:
   Node<T> *list_data;
 
-  int length;
+  int m_length;
 
   Node<T> *current_position;
 };

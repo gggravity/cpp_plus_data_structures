@@ -9,6 +9,12 @@
 using namespace std;
 
 enum Suits { club, diamond, heart, spade };
+
+Suits operator++ (Suits &suit)
+{
+  return static_cast<Suits>(suit + 1);
+}
+
 enum Relation_type { less, equal, greater };
 
 class Card

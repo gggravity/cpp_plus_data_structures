@@ -12,7 +12,10 @@ struct Deck : Unsorted<Card>
 {
  public:
 
-  void generate ();
+  [[noreturn]] void generate ();
 
   void shuffle ();
+
+ private:
+  Deck merge (Deck shorter_deck, Deck longer_deck);
 };
