@@ -33,7 +33,7 @@ void Deck::shuffle ()
       deck_a.put_item(card);
     }
 
-  for (int i { split_size + 1 } ; i < length() ; ++i)
+  for (int i { split_size + 1 } ; i <= length() ; ++i)
     {
       card = next_item();
       deck_b.put_item(card);

@@ -3,6 +3,7 @@
 //
 
 #pragma once
+
 #include <bits/stdc++.h>
 //#include "Item.h"
 #include "Card.h"
@@ -30,17 +31,20 @@ class Unsorted
 
   }
 
-//  virtual ~Unsorted ()
-//  {
-//    Node<T> *ptr;
-//
-//    while (list_data != nullptr)
-//      {
-//        ptr = list_data;
-//        list_data = list_data->next;
-//        delete ptr;
-//      }
-//  }
+  virtual ~Unsorted ()
+  {
+    cout << length() << endl;
+    Node<T> *ptr;
+
+    while (list_data != nullptr)
+      {
+        cout << "deleting node" << endl;
+        ptr = list_data;
+        list_data = list_data->next;
+        delete ptr;
+      }
+    cout << "nodes deleted" << endl;
+  }
 
   void make_empty ()
   {

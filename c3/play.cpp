@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void print_deck (Deck deck)
+void print_deck (Deck &deck)
 {
   if (deck.length() == 0)
     {
