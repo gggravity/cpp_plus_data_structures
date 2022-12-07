@@ -25,7 +25,7 @@ void Deck::shuffle ()
   Deck deck_b;
   Card card;
   reset_list();
-  int split_size { (rand() % 8 + 1) + 22 };
+  int split_size = 27; //  { (rand() % 8 + 1) + 25 };
 
   for (int i { 1 } ; i <= split_size ; ++i)
     {
@@ -55,10 +55,11 @@ Deck Deck::merge (Deck shorter_deck, Deck longer_deck)
 {
   Deck deck;
   Card card;
+  int counter;
   shorter_deck.reset_list();
   longer_deck.reset_list();
 
-  for (int counter { 1 } ; counter <= shorter_deck.length() ; ++counter)
+  for (counter = 1 ; counter <= shorter_deck.length() ; ++counter)
     {
       card = shorter_deck.next_item();
       deck.put_item(card);
@@ -66,9 +67,9 @@ Deck Deck::merge (Deck shorter_deck, Deck longer_deck)
       deck.put_item(card);
     }
 
-  auto remaining { longer_deck.length() - shorter_deck.length() };
+  auto remaining { longer_deck.length() - counter };
 
-  for (int counter { 1 } ; counter <= remaining ; ++counter)
+  for (int i { 1 } ; i <= remaining ; ++i)
     {
       card = longer_deck.next_item();
       deck.put_item(card);

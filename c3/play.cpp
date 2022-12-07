@@ -37,6 +37,7 @@ int main ()
   cout << "Deck after generate" << endl;
   print_deck(deck);
 
+
   for (int i { 1 } ; i <= 10 ; ++i)
     {
       deck.shuffle();

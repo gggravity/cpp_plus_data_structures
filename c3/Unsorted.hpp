@@ -31,20 +31,20 @@ class Unsorted
 
   }
 
-  virtual ~Unsorted ()
-  {
-    cout << length() << endl;
-    Node<T> *ptr;
-
-    while (list_data != nullptr)
-      {
-        cout << "deleting node" << endl;
-        ptr = list_data;
-        list_data = list_data->next;
-        delete ptr;
-      }
-    cout << "nodes deleted" << endl;
-  }
+//  virtual ~Unsorted ()
+//  {
+//    cout << length() << endl;
+//    Node<T> *ptr;
+//
+//    while (list_data != nullptr)
+//      {
+////        cout << "deleting node" << endl;
+//        ptr = list_data;
+//        list_data = list_data->next;
+//        delete ptr;
+//      }
+////    cout << "nodes deleted" << endl;
+//  }
 
   void make_empty ()
   {
