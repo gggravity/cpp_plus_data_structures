@@ -76,4 +76,3 @@ Deck Deck::merge (Deck shorter_deck, Deck longer_deck)
     }
   return deck;
 }
-
