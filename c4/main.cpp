@@ -1,6 +1,3 @@
-//
-// Created by martin on 12/18/22.
-//
 #include <bits/stdc++.h>
 #include "Sorted.h"
 #include "Item.h"
@@ -16,7 +13,7 @@ int main ()
   cout << "length: " << sorted.get_length() << endl;
   cout << "is_full: " << sorted.is_full() << endl;
 
-//  sorted.make_empty();
+  sorted.make_empty();
 
   Item item { 10 };
   cout << "item: " << item << endl;
@@ -26,11 +23,16 @@ int main ()
   auto next_item = sorted.get_next_item();
   cout << "get_next_item: " << next_item << endl;
 
-//  bool found;
-//  auto new_item = sorted.get_item(item, found);
-//  cout << "found: " << found << endl;
-//  cout << "get_item: " << new_item << endl;
-//
-//  sorted.reset_list();
+  bool found;
+  auto new_item = sorted.get_item(item, found);
+  if (found)
+    {
+      cout << "get_item (found): " << new_item << endl;
+    }
+  else
+    {
+      cout << "Item not found" << endl;
+    }
 
+  sorted.reset_list();
 }
