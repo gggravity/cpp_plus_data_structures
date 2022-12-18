@@ -23,13 +23,13 @@ int main ()
   sorted.put_item(item);
   cout << "length: " << sorted.get_length() << endl;
 
-//  auto next_item = sorted.get_next_item();
-//  cout << "get_next_item: " << next_item << endl;
+  auto next_item = sorted.get_next_item();
+  cout << "get_next_item: " << next_item << endl;
 
-  bool found;
-  auto new_item = sorted.get_item(item, found);
-  cout << "found: " << found << endl;
-  cout << "get_item: " << new_item << endl;
+//  bool found;
+//  auto new_item = sorted.get_item(item, found);
+//  cout << "found: " << found << endl;
+//  cout << "get_item: " << new_item << endl;
 //
 //  sorted.reset_list();
 

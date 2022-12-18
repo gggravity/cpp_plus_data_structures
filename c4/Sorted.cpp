@@ -4,6 +4,7 @@ Sorted::Sorted ()
 {
   length = 0;
   list_data = nullptr;
+  current_position = nullptr;
 }
 
 Sorted::~Sorted ()
