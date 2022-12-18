@@ -1,13 +1,14 @@
 #include <bits/stdc++.h>
-#include "Sorted.h"
+#include "Sorted.hpp"
 #include "Item.h"
+#include "Node.hpp"
 
 using namespace std;
 
 int main ()
 {
   cout << "### Chapter 4 - main file ###" << endl;
-  Sorted sorted;
+  Sorted<Item> sorted;
 
   cout << boolalpha;
   cout << "length: " << sorted.get_length() << endl;

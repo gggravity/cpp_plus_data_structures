@@ -1,19 +1,28 @@
-//
-// Created by martin on 12/18/22.
-//
-
 #pragma once
-//#include "deck.h"
-//#include "sorted_type.h"
+
+#include "Sorted.hpp"
+#include "Deck.h"
+#include "Card.h"
 
 class Hands
 {
  public:
-//  Hands();
-//  Hands(int players);
-//
- private:
+  Hands ();
 
+  ~Hands ();
+
+  explicit Hands (int players);
+
+  void deal (int number_of_cards);
+
+  Sorted<Card> get_hand (int which);
+
+ private:
+  int number_of_players;
+
+  Sorted<Card> *hands;
+
+  Deck deck;
 };
 
 

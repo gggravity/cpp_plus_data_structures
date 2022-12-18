@@ -8,10 +8,10 @@
 
 using namespace std;
 
-enum Relation
-{
-    less, greater, equal
-};
+//enum Relation
+//{
+//    less, greater, equal
+//};
 
 class Item
 {
