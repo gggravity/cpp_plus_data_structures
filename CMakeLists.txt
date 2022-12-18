@@ -17,4 +17,5 @@ add_executable(play c3/play.cpp
         c3/Deck.cpp
         c3/Deck.h c3/play.cpp)
 add_executable(rand_test c3/rand_test.cpp)
+add_executable(main_c4 c4/main.cpp c4/Hands.h c4/Hands.cpp c4/Sorted.cpp c4/Sorted.h c4/Item.h c4/Item.cpp)
 target_link_libraries(data_type PRIVATE Catch2::Catch2WithMain)
